@@ -3,7 +3,8 @@
         <script type="text/javascript">
         function getEntries() {
             var xhr = new XMLHttpRequest();
-            var uri = window.location.href;
+            //var uri = window.location.href;
+            var uri = 'http://35.183.208.238/';
             var url = uri + 'serviceA.php';
             xhr.onreadystatechange = function () {
                 if (this.readyState != 4) return;
@@ -32,7 +33,6 @@
     <p id="numberOfEntries"></p>
     <script type="text/javascript">
         var retourPHP;
-        var cteIpPHP = 'http://35.183.208.238/';
         document.getElementById("demo").innerHTML = window.location.href;
         retourPHP = window.location.href + 'index.php';
         document.getElementById('url').innerHTML = retourPHP;
