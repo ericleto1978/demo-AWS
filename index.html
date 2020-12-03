@@ -4,7 +4,8 @@
         function getEntries() {
             var xhr = new XMLHttpRequest();
             //var uri = window.location.href;
-            var uri = 'http://35.183.208.238/';
+            //var uri = 'http://35.183.208.238/';
+            var uri = 'http://lb-app-600148213.ca-central-1.elb.amazonaws.com//';
             var url = uri + 'serviceA.php';
             xhr.onreadystatechange = function () {
                 if (this.readyState != 4) return;
